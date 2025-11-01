@@ -3,7 +3,7 @@
 
 :root{
     --size: max(5px, 1vmin);
-    --height: 80em;
+    --height: 85em;
     --pad: 1.25em;
     --border-radius: 6.666em;
     --gutter: calc(var(--pad) * 2);
@@ -306,13 +306,14 @@ body{
     color: white;
     display: flex;
     cursor: pointer;
-    width: 100%;
+    width: 95%;
     transition: inherit;
     transition-property: inherit;
     will-change: inherit;
     filter: drop-shadow(0 1em 2em hsla(0 0% 0%/var(--shadow-opacity, 0)));
     transform: scale3d(0.375, 0.4, 1);
     transform-origin: top;
+    top: 5px;
 }
 
 .content{
@@ -360,14 +361,14 @@ body{
 }
 
 .content .text:before{
-    content: "Ariabl'EyeS";
+    content: "Miserable";
     order: 1;
     text-transform: "";
 }
 
 .content .text:after{
     order: 2;
-    content: "Miserable";
+    content: "Ariabl'EyeS";
     opacity: 0.5;
 }
 
@@ -401,6 +402,11 @@ body{
     max-height: var(--bar-height, 0%);
     color: rgba(255, 255, 255, 0.5);
     opacity: var(--bar-opacity, 0);
+    bottom: 9px;
+    margin-top: 8px;
+    position: absolute;
+    right: 3em;
+    left: 3em;
 }
 
 .content .bar .duration{
@@ -425,7 +431,7 @@ body{
 }
 
 .content .bar::after{
-    content: "-1.48";
+    content: "-3:42";
 }
 
 .camera{
